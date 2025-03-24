@@ -1,4 +1,3 @@
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
@@ -27,6 +26,8 @@ public class Main {
         System.out.println("Celsius u kelvin: " + convertedScales[1]);
 
         FizzBuzz();
+
+        scanner.close();
     }
 
     public static double IzracunPovrsine(double x, double y){
@@ -37,9 +38,7 @@ public class Main {
         double faranheit = (celsius * (9.0/5.0) + 32);
         double kelvin = (celsius + 273.25);
 
-        double[] tempScales = {faranheit, kelvin};
-
-        return tempScales;
+        return new double[]{faranheit, kelvin};
     }
 
     public static void FizzBuzz(){
